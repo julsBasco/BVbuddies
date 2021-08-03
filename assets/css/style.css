@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(9, 100vh) 5vh;
+    grid-template-areas: "header"
+                        "bianca"
+                        "cn"
+                        "nads"
+                        "micah"
+                        "lem"
+                        "ivan"
+                        "dan"
+                        "juls"
+                        "footer";
+    
+    justify-content: center;
+}
+
+@media screen and (min-width: 481px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 75vw;
+        grid-template-rows: repeat(9, 100vh) 5vh;
+        grid-template-areas: "header"
+                            "bianca"
+                            "cn"
+                            "nads"
+                            "micah"
+                            "lem"
+                            "ivan"
+                            "dan"
+                            "juls"
+                            "footer";
+        
+        justify-content: center;
+    }
+    
+}
+
+
+.grid__col3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+header {
+    grid-area: header;
+    background-color: blanchedalmond;
+}
+
+.bianca {
+    grid-area: bianca;
+    background-color: pink;
+}
+
+.cn {
+    grid-area: cn;
+    background-color: powderblue;
+}
+
+.mc {
+    grid-area: nads;
+    background-color: silver;
+}
+
+.micah {
+    grid-area: micah;
+    background-color: pink;
+}
+
+.lem {
+    grid-area: lem;
+    background-color: paleturquoise;
+}
+
+.ivan {
+    grid-area: ivan;
+    background-color: rgb(83, 83, 255);
+}
+
+.dan {
+    grid-area: dan;
+    background-color: rgb(0, 255, 149);
+}
+
+.juls {
+    grid-area: juls;
+    background-color: rgb(0, 204, 255);
+}
+
+footer {
+    grid-area: footer;
+    background-color: grey;
+}
