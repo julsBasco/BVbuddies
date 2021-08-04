@@ -4,6 +4,7 @@
 }
 
 
+
 .grid{
     display: grid;
     grid-template-columns: 100vw;
@@ -48,18 +49,55 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "one two three"
+                        "four five six";
 }
 
+.grid__people{
+    grid-area: two;
+    height: 20vh;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.grid__name {
+    grid-area: 1/1/2/4;
+    justify-self: center;
+    align-self: end;
+    position: relative;
+    bottom: 10%;
+}
+/* HEADER AREA */
 header {
     grid-area: header;
     background-color: blanchedalmond;
+    display: grid;
+
+
 }
 
+header img{
+    height: 50vh;
+    border-radius: 50%;
+    
+}
+
+
+
+/* END OF HEADER AREA */
+
+/* BIANCA SECTION */
 .bianca {
     grid-area: bianca;
     background-color: pink;
 }
 
+
+/* END OF BIANCA SECTION */
+
+/*  */
 .cn {
     grid-area: cn;
     background-color: powderblue;
@@ -90,11 +128,15 @@ header {
     background-color: rgb(0, 255, 149);
 }
 
+/* JULS AREA */
 .juls {
     grid-area: juls;
     background-color: rgb(0, 204, 255);
 }
 
+
+
+/* END OF JULS */
 footer {
     grid-area: footer;
     background-color: grey;
