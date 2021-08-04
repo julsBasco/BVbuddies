@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -44,7 +46,7 @@
     
 }
 
-
+/* GLOBAL CLASS */
 .grid__col3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,7 +70,45 @@
     align-self: end;
     position: relative;
     bottom: 10%;
+    font-family: 'Tangerine', cursive;;
+    font-size: 2.5em;
+    color: black;
+    
 }
+
+.box  {
+    border-left: 6px solid rgb(0, 0, 0);
+    height: 70px;
+    margin-right: 2em;
+    grid-area: 2/1/3/2;
+    position: relative;
+    top: 8%;
+    justify-self: center;
+
+}
+
+.quote {
+    grid-area: 2/1/3/4;
+    position: relative;
+    top: 8%;
+    align-self: start;
+    justify-self: center;
+}
+
+.specialchar {
+    font-family: 'Tangerine', cursive;
+    font-size: 2em;
+}
+
+.note{
+    grid-area: 2/1/3/4;
+    align-self: center;
+    justify-self: center;
+    padding: 10%;
+}
+/* END OF GLOBAL CLASS */
+
+
 /* HEADER AREA */
 header {
     grid-area: header;
@@ -81,7 +121,6 @@ header {
 header img{
     height: 50vh;
     border-radius: 50%;
-    
 }
 
 
