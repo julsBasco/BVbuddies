@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- CSS FILES -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css.map">
 </head>
 <body>
     <div>
@@ -13,7 +17,7 @@
             <header>
                
             </header>
-            
+<!--             
             <section class="bianca grid__col3 ">
                 <img src="./assets/img/bianca.jpg" class="grid__people" alt="bianca">
                 <h1 class="grid__name">Bianca Claudette Parabas</h1>
@@ -47,17 +51,44 @@
             <section class="dan grid__col3">
                 <img src="./assets/img/dan.jpg" alt="dan" class="grid__people">
                 <h1 class="grid__name">Danryl Dave Acampado</h1>
-            </section>
+            </section> -->
 
-            <section class="juls grid__col3">
+            <section class="juls grid__col3 grid__col4">
                 <img src="./assets/img/juls.jpg" class="grid__people" alt="juls">
                 <h1 class="grid__name">Julian Rexor Basco</h1>
-                <div class="box"></div>
-                <h1 class="quote">Goal ko maging <br><span class="specialchar">Circuit Overseer</span></h1>
-                <p class="note">Okay lang sa akin kahit anong atas pero kung papipiliin gusto kong maging C.O, napakahusay nilang magpatibay ng mga kapatid at tumulong sa kanila gusto ko ring tularan sila.</p>
+                <!-- <div class="box"></div> -->
+                <div id="carousel-wrapper" class="specialBox">
+                    <div id="menu">
+                        <div id="current-option">
+                            <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                            <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                        </div>
+                        <button id="previous-option"></button>
+                        <button id="next-option"></button>
+                        
+                    </div>
+                    <div id="image"></div>
+                </div>
+                <!-- <h1 class="quote">Lorem, ipsum dolor. <br><span class="specialchar">Lorem, ipsum.</span></h1>
+                <p class="note">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus blanditiis natus distinctio alias eveniet et perferendis vitae odio! Earum, fugit?</p> -->
             </section>
             <footer></footer>
         </div>
     </div>
+    
+    <div id="carousel-wrapper">
+        <div id="menu">
+            <div id="current-option">
+                <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+            </div>
+            <button id="previous-option"></button>
+            <button id="next-option"></button>
+            
+        </div>
+        <div id="image"></div>
+    </div>
+    <script src="./assets/js/carousel.js"></script>
 </body>
 </html>
+

@@ -12,39 +12,19 @@
     grid-template-columns: 100vw;
     grid-template-rows: repeat(9, 100vh) 5vh;
     grid-template-areas: "header"
-                        "bianca"
+                        "juls"
                         "cn"
                         "nads"
                         "micah"
                         "lem"
                         "ivan"
                         "dan"
-                        "juls"
+                        "BIANCA"
                         "footer";
     
     justify-content: center;
 }
 
-@media screen and (min-width: 481px) {
-    .grid{
-        display: grid;
-        grid-template-columns: 75vw;
-        grid-template-rows: repeat(9, 100vh) 5vh;
-        grid-template-areas: "header"
-                            "bianca"
-                            "cn"
-                            "nads"
-                            "micah"
-                            "lem"
-                            "ivan"
-                            "dan"
-                            "juls"
-                            "footer";
-        
-        justify-content: center;
-    }
-    
-}
 
 /* GLOBAL CLASS */
 .grid__col3 {
@@ -106,6 +86,11 @@
     justify-self: center;
     padding: 10%;
 }
+
+.specialBox {
+    grid-area: 2/1/3/4;
+}
+
 /* END OF GLOBAL CLASS */
 
 
@@ -176,7 +161,131 @@ header img{
 
 
 /* END OF JULS */
+
+/* START OF FOOTER */
 footer {
     grid-area: footer;
     background-color: grey;
 }
+
+/* END OF FOOTER */
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 481px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 75vw;
+        grid-template-rows: repeat(9, 100vh) 5vh;
+        grid-template-areas: "header"
+                            "juls"
+                            "cn"
+                            "nads"
+                            "micah"
+                            "lem"
+                            "ivan"
+                            "dan"
+                            "bianca"
+                            "footer";
+        
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (min-width: 769px){
+    .grid{
+        display: grid;
+        grid-template-columns: 95vw;
+        grid-template-rows: repeat(9, 100vh) 5vh;
+        grid-template-areas: "header"
+                            "juls"
+                            "cn"
+                            "nads"
+                            "micah"
+                            "lem"
+                            "ivan"
+                            "dan"
+                            "bianca"
+                            "footer";
+        
+        justify-content: center;
+    }
+
+        /* GLOBAL CLASS */
+ 
+
+    .grid__col3{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .shadows{
+        box-shadow: 0px 5% black;
+    }
+
+    .grid__people{
+        grid-area: 1/3/2/5;
+        height: 25vh;
+        border-radius: 50%;
+        position: relative;
+        right: 10%;
+        justify-self: end;
+        align-self: center;
+        border: 1vh solid white;
+       
+    }
+
+    .grid__name {
+        grid-area: 1/1/2/4;
+        justify-self: center;
+        align-self: end;
+        position: relative;
+        bottom: 10%;
+        font-family: 'Tangerine', cursive;;
+        font-size: 4em;
+        color: black;
+        
+    }
+
+    .box  {
+        border-left: 6px solid rgb(0, 0, 0);
+        height: 70px;
+        margin-right: 2em;
+        grid-area: 2/1/3/2;
+        position: relative;
+        top: 8%;
+        justify-self: center;
+
+    }
+
+    .quote {
+        grid-area: 2/1/3/4;
+        position: relative;
+        top: 8%;
+        align-self: start;
+        justify-self: center;
+    }
+
+    .specialchar {
+        font-family: 'Tangerine', cursive;
+        font-size: 2em;
+    }
+
+    .note{
+        grid-area: 2/1/3/4;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        top:10%;
+        padding: 10%;
+    }
+
+    .specialBox {
+        grid-area: 2/1/3/4;
+    }
+    /* END OF GLOBAL CLASS */
+}
+
+/* END OF MEDIA QUERIES */
