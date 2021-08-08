@@ -246,12 +246,14 @@ figure {
         display: grid;
         grid-area: 3/1/5/2;
         padding: 5%;
-        height: 50%;
+        
+        height: 20%;
         font-family: 'Text Me One', sans-serif;
         text-align: justify;
         justify-self: center;
         align-self: center;
         overflow: scroll;
+        overflow-x: hidden;
     }
     
     .card_quoteGrid {
@@ -263,6 +265,8 @@ figure {
         grid-column: repeat(2, 1fr);
         height: 100%;
         overflow: scroll;
+        overflow-x: hidden;
+        
         padding:2%;
     }
     
@@ -292,7 +296,7 @@ figure {
     }
 
     #img-juls {
-        display: none ;
+        
       
     }
 }
